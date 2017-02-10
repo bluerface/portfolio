@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background: url('images/tweed.png') repeat, grey;
 }
 
 h1, h2 {
@@ -17,6 +18,8 @@ p {
 
 #content {
   padding: 30px;
+  background: url('images/concrete_seamless.png') repeat, white;
+  box-shadow: rgba(30, 30, 30, 0.7) 5px 5px 10px;
   margin: 30px auto;
   width: 80%;
   max-width: 1000px;
