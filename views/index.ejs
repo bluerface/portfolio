@@ -3,12 +3,11 @@
 <head>
   <meta charset="utf-8"/>
   <title>Marked in the browser</title>
-  <script src="lib/marked.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="content"></div>
-  <script>
+  <div id="content"><%- markdown %></div>
+  <!-- <script>
     marked.setOptions({
       renderer: new marked.Renderer(),
       gfm: true,
@@ -20,7 +19,7 @@
       smartypants: false
     });
     document.getElementById('content').innerHTML =
-      marked('# Marked in browser\n\nRendered by **marked**.');
-  </script>
+      marked(<%= markdown %>);
+  </script> -->
 </body>
 </html>
